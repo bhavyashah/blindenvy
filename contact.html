@@ -3,36 +3,40 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contact - Blind Envy</title>
+    <title>Get in Touch - Blind Envy</title>
     <meta name="description" content="Contact Blind Envy." />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%2311110f'/><circle cx='50' cy='50' r='30' fill='none' stroke='%23e8a33a' stroke-width='6'/></svg>" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header is-scrolled" data-header>
+    <header class="site-header" data-header>
       <a class="brand" href="index.html" aria-label="Blind Envy home"><span class="brand-mark" aria-hidden="true"></span><span>Blind Envy</span></a>
       <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
         <span class="nav-toggle-line"></span><span class="nav-toggle-line"></span><span class="nav-toggle-line"></span><span class="sr-only">Menu</span>
       </button>
       <nav class="site-nav" id="site-nav" aria-label="Primary">
-        <a href="devices.html">Devices</a>
-        <a href="podcast.html">Podcasts</a>
-        <a href="people.html">People</a>
-        <a class="nav-cta" href="contact.html" aria-current="page">Contact</a>
+        <a href="devices.html">What We Build</a>
+        <a href="podcast.html">The Podcast</a>
+        <a href="people.html">Who We Are</a>
+        <a class="nav-cta" href="contact.html" aria-current="page">Get in Touch</a>
       </nav>
     </header>
 
     <main id="main" class="page-main">
       <section class="page-hero compact-page" aria-labelledby="page-title">
         <div class="section-inner narrow">
-          <h1 id="page-title">Contact</h1>
+          <h1 id="page-title">Get in Touch</h1>
           <p>For collaborations, press, or early conversations, send us a note.</p>
         </div>
       </section>
 
       <section class="simple-section">
         <div class="section-inner narrow">
-          <form class="contact-form" action="mailto:hello@blindenvy.io" method="post" enctype="text/plain">
+          <form class="contact-form" action="https://formsubmit.co/hello@blindenvy.io" method="POST">
+            <input type="hidden" name="_subject" value="New message from blindenvy.io" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="https://blindenvy.io/contact.html" />
             <label>
               Name
               <input name="name" autocomplete="name" required />
@@ -47,15 +51,11 @@
             </label>
             <button class="button button-primary" type="submit">Send message</button>
           </form>
-          <p class="form-note">
-            This form opens your email app. You can also write directly to
-            <a href="mailto:hello@blindenvy.io">hello@blindenvy.io</a>.
-          </p>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer"><p>Blind Envy</p><p><a href="index.html">Home</a></p></footer>
+    <footer class="site-footer"><p>&copy; 2026 Blind Envy</p><p><a href="mailto:hello@blindenvy.io">hello@blindenvy.io</a></p></footer>
     <script src="script.js"></script>
   </body>
 </html>
