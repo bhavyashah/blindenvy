@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blind Envy</title>
+    <meta
+      name="description"
+      content="Blind Envy is making tactile audio tools and a podcast series shaped by blind creators and useful far beyond the screen."
+    />
+    <meta property="og:title" content="Blind Envy" />
+    <meta property="og:description" content="Audio tools that feel as good as they sound." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/blindenvy-hero.png" />
+    <link rel="preload" href="assets/blindenvy-hero.png" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="Blind Envy home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Blind Envy</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="devices.html">Devices</a>
+        <a href="podcast.html">Podcasts</a>
+        <a href="people.html">People</a>
+        <a class="nav-cta" href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero hero-simple" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="assets/blindenvy-hero.png"
+          alt="Hands using a tactile audio controller with knobs, faders, headphones, and braille-like markings on a studio table."
+        />
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <h1 id="hero-title">Blind Envy</h1>
+          <p class="hero-lede">Audio tools that feel as good as they sound.</p>
+        </div>
+      </section>
+
+      <section class="simple-section" aria-labelledby="simple-title">
+        <div class="section-inner simple-grid">
+          <div>
+            <h2 id="simple-title">Listen, touch, and tell your story.</h2>
+          </div>
+          <p>
+            Blind Envy takes the lost wisdom of tape-era audio work and gives it digital
+            convenience: dedicated controls, motorized feedback, and fewer menus. We are building
+            tactile recording and editing devices for those that need an alternative to screens. That
+            includes people with screen fatigue, musicians who want a more physical instrument, and
+            communities whose stories live more naturally in speech than in written interfaces.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Blind Envy</p>
+      <p>Audio tools without screens.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

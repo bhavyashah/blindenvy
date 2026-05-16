@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact - Blind Envy</title>
+    <meta name="description" content="Contact Blind Envy." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header is-scrolled" data-header>
+      <a class="brand" href="index.html" aria-label="Blind Envy home"><span class="brand-mark" aria-hidden="true"></span><span>Blind Envy</span></a>
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
+        <span class="nav-toggle-line"></span><span class="nav-toggle-line"></span><span class="nav-toggle-line"></span><span class="sr-only">Menu</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="devices.html">Devices</a>
+        <a href="podcast.html">Podcasts</a>
+        <a href="people.html">People</a>
+        <a class="nav-cta" href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main" class="page-main">
+      <section class="page-hero compact-page" aria-labelledby="page-title">
+        <div class="section-inner narrow">
+          <h1 id="page-title">Contact</h1>
+          <p>For collaborations, press, or early conversations, send us a note.</p>
+        </div>
+      </section>
+
+      <section class="simple-section">
+        <div class="section-inner narrow">
+          <form class="contact-form" action="mailto:hello@blindenvy.io" method="post" enctype="text/plain">
+            <label>
+              Name
+              <input name="name" autocomplete="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" autocomplete="email" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="7" required></textarea>
+            </label>
+            <button class="button button-primary" type="submit">Send message</button>
+          </form>
+          <p class="form-note">
+            This form opens your email app. You can also write directly to
+            <a href="mailto:hello@blindenvy.io">hello@blindenvy.io</a>.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><p>Blind Envy</p><p><a href="index.html">Home</a></p></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
